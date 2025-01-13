@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="Books.html">الكتب</a></li>
+                <li><a href="OrderForm.html">طلب كتاب</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>الكتب المتوفرة</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>عنوان الكتاب</th>
+                    <th>السعر</th>
+                    <th>ISBN</th>
+                    <th>إظهار التفاصيل</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ألف ليلة وليلة</td>
+                    <td>25000 ل.س</td>
+                    <td>978-9770916738</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>حقوق النشر &copy; 2024 مكتبة الإنترنت | تصميم احترافي</p>
+    </footer>
+</body>
+</html>

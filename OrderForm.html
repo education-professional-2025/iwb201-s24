@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب كتاب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="Books.html">الكتب</a></li>
+                <li><a href="OrderForm.html">طلب كتاب</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>طلب كتاب</h2>
+        <form onsubmit="validateForm(event)">
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <label for="nationalID">الرقم الوطني:</label>
+            <input type="text" id="nationalID" name="nationalID" required pattern="\\d{11}">
+            <label for="birthDate">تاريخ الميلاد:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            <label for="mobileNumber">رقم الموبايل:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" required pattern="09[3|4|5|6|7|8|9]\\d{7}">
+            <label for="email">الإيميل:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">إرسال</button>
+        </form>
+    </main>
+    <footer>
+        <p>حقوق النشر &copy; 2024 مكتبة الإنترنت | تصميم احترافي</p>
+    </footer>
+</body>
+</html>
